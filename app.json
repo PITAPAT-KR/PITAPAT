@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "PITAPAT",
-    "slug": "PITAPAT",
+    "slug": "pitapat-kr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4daa5f73-bf16-40ba-8e81-9e9e9a0b8b92"
+      }
+    },
+    "owner": "pitapat-kr"
   }
 }
