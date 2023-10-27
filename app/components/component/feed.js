@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Mypage() {
+export default function Feed() {
   return (
     <View style={styles.container}>
-      <Text>마이페이지</Text>
+      <Text>피드</Text>
     </View>
   );
 }
@@ -11,6 +11,6 @@ export default function Mypage() {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    height: "50%",
+    height: "100%",
   },
 });
