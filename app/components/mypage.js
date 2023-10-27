@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Feed() {
+export default function Mypage() {
   return (
     <View style={styles.container}>
-      <Text>피드</Text>
+      <Text>마이페이지</Text>
     </View>
   );
 }

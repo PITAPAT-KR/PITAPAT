@@ -1,9 +1,9 @@
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 
-export default function Feed() {
+export default function Community() {
   return (
     <View style={styles.container}>
-      <Text>피드</Text>
+      <Text>커뮤니티</Text>
     </View>
   );
 }

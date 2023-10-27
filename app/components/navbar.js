@@ -1,32 +1,39 @@
-import { Alert, StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { FontAwesome } from "@expo/vector-icons";
 
-export default function Navbar() {
+export default function Navbar({ handleButtonPress }) {
   return (
     <View style={styles.container}>
       <TouchableOpacity
-        onPress={() => Alert.alert("홈페이지를 보여드릴게요")}
+        onPress={() => handleButtonPress("feed")}
         style={styles.button}
       >
-        <FontAwesome name="home" size={24} color="black" />
-        <Text style={styles.buttonText}>홈</Text>
+        <FontAwesome name="paper-plane" size={24} color="black" />
+        <Text style={styles.buttonText}>피드</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => Alert.alert("커뮤티니를 보여드릴게요")}
+        onPress={() => handleButtonPress("community")}
         style={styles.button}
       >
         <FontAwesome name="users" size={24} color="black" />
         <Text style={styles.buttonText}>커뮤니티</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => Alert.alert("채팅을 보여드릴게요")}
+        onPress={() => handleButtonPress("home")}
+        style={styles.button}
+      >
+        <FontAwesome name="home" size={24} color="black" />
+        <Text style={styles.buttonText}>홈</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => handleButtonPress("chat")}
         style={styles.button}
       >
         <FontAwesome name="wechat" size={24} color="black" />
         <Text style={styles.buttonText}>채팅</Text>
       </TouchableOpacity>
       <TouchableOpacity
-        onPress={() => Alert.alert("마이페이지를 보여드릴게요")}
+        onPress={() => handleButtonPress("myPage")}
         style={styles.button}
       >
         <FontAwesome name="user" size={24} color="black" />

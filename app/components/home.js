@@ -1,13 +1,12 @@
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet, View, Text } from "react-native";
 
-export default function Feed() {
+export default function Home() {
   return (
     <View style={styles.container}>
-      <Text>피드</Text>
+      <Text>홈화면입니다</Text>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     width: "100%",
