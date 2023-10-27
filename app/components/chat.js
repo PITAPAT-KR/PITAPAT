@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function Feed() {
+export default function Chat() {
   return (
     <View style={styles.container}>
-      <Text>피드</Text>
+      <Text>채팅</Text>
     </View>
   );
 }
